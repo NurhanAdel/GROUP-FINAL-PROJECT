@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+body {
+    font-family: "Lato", sans-serif;
+    color: #484F56;
+
+}
+
+a {
+    color: #484F56;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ------------------------------------------------ */
+/* Hero-Page| START */
+/* Navbar-start */
+.navbar-nav .nav-link.active,
+.nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+   
+}
+
+
+.nav-link {
+    position: relative;
+    padding-bottom: 10px;
+    margin-right: 15px;
+
+}
+
+.nav-link::after {
+    content: " ";
+    width: 0;
+    border: 1px solid rgb(255, 255, 255);
+    position: absolute;
+    top: 75%;
+    left: 0;
+    transition: 0.3s;
+
+}
+
+.nav-link:hover::after {
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+
+
+}
+
+.navLogin {
+    width: 13%;
+}
+
+.shopping-bag-numbers {
+    width: 20px;
+    height: 20px;
+    background-color: #E79C96;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9px;
+    font-weight: bold;
+
+}
+
+/* Navbar-end */
+/* silde imgs-start */
+.hero-slides .card {
+    border: none;
+    border-bottom: 1px solid gray;
+   
+}
+
+.home-silde-1 {
+    background-image: url(../IMGS/home-slide-1.webp);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.home-silde-2 {
+    background-image: url(../IMGS/home-slide-2.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.home-silde-3 {
+    background-image: url(../IMGS/home-slide-3.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.home-silde-layer {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.silde-content {
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.silde-content h4 {
+    font-size: 14px;
+    margin: 0px 0px 20px;
+}
+
+.silde-content h1 {
+    font-size: 72px;
+    margin: 0px 0px 16px;
+}
+
+
+.silde-content p {
+    font-size: 18px;
+    margin: 0px 0px 35px;
+}
+
+.silde-content h6 {
+    font-size: 12px;
+    margin: 0px 0px 5px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.silde-content h6::after {
+    content: " ";
+    width: 70px;
+    border: 1px solid rgb(255, 255, 255);
+    position: absolute;
+    top: 100%;
+    left: 41%;
+    transition: 0.3s;
+
+
+}
+
+
+.silde-content h6:hover::after {
+    cursor: pointer;
+    animation-name: shopNow;
+    animation-duration: 1s;
+}
+
+
+@keyframes shopNow {
+    10% {
+        width: 0px;
+
+    }
+
+    30% {
+        width: 50px;
+
+    }
+
+    70% {
+        width: 70px;
+
+    }
+}
+
+
+.hero-content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-email a {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hero-links {
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.hero-links h4 {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+
+/* silde imgs-end */
+/* Hero-Page| END */
+/* ------------------------------------------------ */
+/* Viedo-Page| START */
+.video-right {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.video-logo {
+    display: flex;
+    align-items: center;
+}
+
+.video-right p {
+    font-size: 31px;
+    font-style: italic;
+}
+
+.video-right img {
+    width: 15%;
+    margin: 20px;
+
+}
+
+.video-right a {
+    font-size: 13px;
+    font-weight: bolder;
+    position: relative;
+    text-decoration: none;
+
+}
+
+.video-right a::after {
+    content: " ";
+    width: 0px;
+    border: 1px solid rgb(255, 255, 255);
+    position: absolute;
+    top: 90%;
+    left: 0px;
+    transition: 0.3s;
+
+}
+
+.video-right a:hover::after {
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+
+
+}
+
+/* Video-Page| END */
+/* ------------------------------------------------ */
+/* Gallery-Page| START */
+.gallery-title h6 {
+    font-size: 19px;
+    color: #1559B6;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.gallery-title p {
+    width: 30%;
+    margin: 0px auto 40px;
+
+}
+
+.gallery-title a {
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.gallery-photes img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* Gallery-Page| END */
+/* ------------------------------------------------ */
+@media (max-width:576px) {
+    .navLogin {
+        width: 50%;
+    }
+
+    .video-container iframe {
+        width: 100%;
+    }
+
+    .video-container p {
+        width: 100% !important;
+    }
+
+    .gallery-photes .row {
+        gap: 15px;
+    }
+
+    .gallery-title p {
+        width: 70%;
+    }
+}
